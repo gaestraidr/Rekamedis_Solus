@@ -1,0 +1,1980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1099.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.sysinforekamedis.core.MainFormController">
+   <children>
+      <SplitPane dividerPositions="0.11314984709480122" orientation="VERTICAL" prefHeight="656.0" prefWidth="244.0" style="-fx-fill: #000000;" styleClass="bg-secondary">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="71.0" prefWidth="242.0">
+               <children>
+                  <Label layoutX="75.0" layoutY="9.0" prefHeight="31.0" prefWidth="165.0" text="Klinik" textFill="WHITE">
+                     <font>
+                        <Font name="Century751 BT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="33.0" prefHeight="31.0" prefWidth="165.0" text="Triaz Persada" textFill="WHITE">
+                     <font>
+                        <Font name="Century751 BT Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="53.0" fitWidth="55.0" layoutX="13.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@style/logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <StackPane prefHeight="599.0" prefWidth="242.0">
+               <children>
+                  <JFXListView fx:id="menuListView" prefHeight="504.0" prefWidth="248.0" style="-fx-background-color: transparent;">
+                     <StackPane.margin>
+                        <Insets top="30.0" />
+                     </StackPane.margin>
+                  </JFXListView>
+               </children>
+            </StackPane>
+        </items>
+      </SplitPane>
+      <TabPane fx:id="formTabPane" layoutX="244.0" layoutY="49.0" prefHeight="607.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Home">
+              <content>
+                <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="77.0" layoutY="55.0" prefHeight="341.0" prefWidth="727.0" style="-fx-border-width: 3px; -fx-border-color: #51966f; -fx-border-radius: 5px;">
+                           <children>
+                              <Label fx:id="homeAntNumberLabel" alignment="CENTER" layoutX="9.0" layoutY="98.0" prefHeight="58.0" prefWidth="708.0" text="A12" textFill="#51966f">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="297.0" layoutY="24.0" text="Nomor Antrian" textFill="#4bb59d">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="266.0" layoutY="60.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: #51966f;" />
+                              <Label fx:id="homeAntDescLabel" alignment="CENTER" layoutX="9.0" layoutY="191.0" prefHeight="53.0" prefWidth="712.0" text="Silahkan panggil antrian No. ...... dengan pasien bernama ......." textFill="#686565" wrapText="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="homeAntNextButton" buttonType="RAISED" layoutX="254.0" layoutY="258.0" styleClass="bg-secondary" text=" Antrian Selanjutnya" textFill="WHITE">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="TOGGLE_RIGHT" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                        <Label layoutX="414.0" layoutY="489.0" prefHeight="31.0" prefWidth="149.0" text="Klinik">
+                           <font>
+                              <Font name="Century751 BT Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="414.0" layoutY="512.0" prefHeight="31.0" prefWidth="149.0" text="Triaz Persada">
+                           <font>
+                              <Font name="Century751 BT Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="750.0" layoutY="538.0" text="Gaestra © 2021" textFill="#948f8f">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="53.0" fitWidth="55.0" layoutX="351.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@style/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane> </content> </ScrollPane>
+              </content>
+            </Tab>
+            <Tab text="Pasien / Antrian">
+               <content>
+                  <ScrollPane> <content> <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="pasienTabPane" layoutY="-29.0" prefHeight="607.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Main">
+                              <content>
+                                <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton fx:id="pasienGotoCreate" buttonType="RAISED" layoutX="51.0" layoutY="84.0" onAction="#changePaneWindow" prefHeight="37.0" prefWidth="203.0" text="Buat Antrian Pasien">
+                                             <styleClass>
+                                                <String fx:value="bg-primary" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="18" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label layoutX="23.0" layoutY="24.0" prefHeight="36.0" prefWidth="279.0" text=" Data Pasien / Antrian">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="ID_CARD" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <Pane layoutX="644.0" layoutY="-1.0" prefHeight="418.0" prefWidth="173.0" styleClass="bg-secondary" />
+                                          <Pane layoutX="629.0" layoutY="27.0" prefHeight="423.0" prefWidth="173.0" styleClass="bg-primary" />
+                                          <Pane layoutX="52.0" layoutY="144.0" prefHeight="341.0" prefWidth="735.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <Label layoutX="42.0" layoutY="120.0" text="Selected:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXButton fx:id="pasienMainSelectedLabel" buttonType="RAISED" layoutX="14.0" layoutY="148.0" prefHeight="38.0" prefWidth="118.0" text="None">
+                                                   <styleClass>
+                                                      <String fx:value="bg-primary" />
+                                                      <String fx:value="text-white" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="188.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nomor Antrian" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pasienMainNomorAnt" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama Pasien" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pasienMainNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Umur Pasien" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pasienMainUmur" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="164.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Jenis Kelamin" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Laki - Laki" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pasienMainJK" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Perempuan" textFill="WHITE" toggleGroup="$pasienMainJK">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="241.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Alamat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextArea fx:id="pasienMainAlamat" focusColor="WHITE" prefHeight="50.0" prefWidth="368.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Layanan" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXComboBox fx:id="pasienMainLayanan" focusColor="WHITE" prefHeight="25.0" prefWidth="226.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Pasien Urgent" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Tidak" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pasienMainUrgent" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Ya" textFill="WHITE" toggleGroup="$pasienMainUrgent">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="pasienMainUpdateButton" buttonType="RAISED" layoutX="575.0" layoutY="315.0" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Update" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="pasienMainDeleteButton" buttonType="RAISED" layoutX="414.0" layoutY="315.0" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Hapus" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="pasienMainCKButton" buttonType="RAISED" layoutX="32.0" layoutY="315.0" prefHeight="39.0" prefWidth="165.0" styleClass="bg-primary" text="Cetak Kartu" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <TableView fx:id="pasienMainListTable" layoutX="53.0" layoutY="519.0" prefHeight="200.0" prefWidth="735.0" />
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Create">
+                              <content>
+                                <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane layoutX="61.0" layoutY="119.0" prefHeight="365.0" prefWidth="736.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="188.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nomor Antrian" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pasienCreateNomorAnt" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama Pasien" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pasienCreateNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Umur Pasien" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pasienCreateUmur" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="164.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Jenis Kelamin" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Laki - Laki" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pasienCreateJK" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Perempuan" textFill="WHITE" toggleGroup="$pasienCreateJK">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="241.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Alamat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextArea fx:id="pasienCreateAlamat" focusColor="WHITE" prefHeight="50.0" prefWidth="368.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Layanan" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXComboBox fx:id="pasienCreateLayanan" focusColor="WHITE" prefHeight="25.0" prefWidth="226.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="133.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Pasien Urgent" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Tidak" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pasienCreateUrgent" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Ya" textFill="WHITE" toggleGroup="$pasienCreateUrgent">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="pasienCreateTambahButton" buttonType="RAISED" layoutX="483.0" layoutY="341.0" prefHeight="39.0" prefWidth="202.0" styleClass="bg-primary" text="Tambahkan" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="pasienCreateCetakButton" buttonType="RAISED" layoutX="267.0" layoutY="340.0" prefHeight="39.0" prefWidth="202.0" styleClass="bg-primary" text="Cetak &amp; Tambah" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="61.0" layoutY="65.0" prefHeight="36.0" prefWidth="339.0" text=" Tambah Pasien / Antrian">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <JFXButton fx:id="pasienBacktoMain" buttonType="RAISED" layoutX="12.0" layoutY="11.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="118.0" styleClass="bg-secondary" text="Kembali" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children></AnchorPane> </content> </ScrollPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane> </content> </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Pemeriksaan">
+               <content>
+                  <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="pemeriksaanTabPane" layoutY="-29.0" prefHeight="607.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Main">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="23.0" layoutY="24.0" prefHeight="36.0" prefWidth="279.0" text=" Data Pemeriksaan">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="STETHOSCOPE" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <Pane layoutX="644.0" layoutY="-1.0" prefHeight="418.0" prefWidth="173.0" styleClass="bg-secondary" />
+                                          <Pane layoutX="629.0" layoutY="27.0" prefHeight="423.0" prefWidth="173.0" styleClass="bg-primary" />
+                                          <Pane layoutX="52.0" layoutY="88.0" prefHeight="378.0" prefWidth="735.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <Label layoutX="42.0" layoutY="120.0" text="Selected:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXButton fx:id="pemeriksaanMainSelectedLabel" buttonType="RAISED" layoutX="14.0" layoutY="148.0" prefHeight="38.0" prefWidth="118.0" text="None">
+                                                   <styleClass>
+                                                      <String fx:value="bg-primary" />
+                                                      <String fx:value="text-white" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="188.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nomor Pasien" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pemeriksaanMainNomor" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama Pasien" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pemeriksaanMainNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="241.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Hasil Diagnosa" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextArea fx:id="pemeriksaanMainDiagnosa" focusColor="WHITE" prefHeight="50.0" prefWidth="368.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="92.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Resep Obat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <TableView fx:id="pemeriksaanMainObatTable" prefHeight="142.0" prefWidth="369.0" />
+                                                         </children>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="pemeriksaanMainDeleteButton" buttonType="RAISED" layoutX="32.0" layoutY="358.0" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Hapus" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <TableView fx:id="pemeriksaanMainListTable" layoutX="53.0" layoutY="503.0" prefHeight="200.0" prefWidth="735.0" />
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children></AnchorPane> </content> </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Pembayaran">
+               <content>
+                  <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="pembayaranTabPane" layoutY="-29.0" prefHeight="607.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Main">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox layoutX="144.0" layoutY="105.0" prefHeight="625.0" prefWidth="568.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FlowPane prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Kode Resep" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="pembayaranMainKode" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="30.0" layoutY="40.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Nomor Pasien" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="pembayaranMainNomor" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="30.0" layoutY="75.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Nama Pasien" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="pembayaranMainNama" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="30.0" layoutY="112.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Umur Pasien" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="pembayaranMainUmur" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                                <FlowPane layoutX="30.0" layoutY="148.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Jenis Kelamin" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="pembayaranMainJK" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                                <VBox prefHeight="129.0" prefWidth="528.0" styleClass="bg-primary">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="195.0" text="Jenis Pemeriksaan" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <Label fx:id="pembayaranMainLayanan" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="195.0" text="Total Tagihan" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <Label fx:id="pembayaranMainTotal" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="195.0" text="Nama Admin" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <Label fx:id="pembayaranMainNamaStaff" prefHeight="26.0" prefWidth="286.0" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <TableView fx:id="pembayaranMainObatTable" prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Label layoutX="290.0" layoutY="76.0" prefHeight="41.0" prefWidth="250.0" styleClass="bg-secondary" text=" Form Pembayaran" textFill="WHITE">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CLIPBOARD" size="25" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label layoutX="28.0" layoutY="23.0" prefHeight="36.0" prefWidth="339.0" text=" Pembayaran">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="MONEY" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <JFXButton fx:id="pembayaranGotoHistory" buttonType="RAISED" layoutX="535.0" layoutY="22.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="293.0" styleClass="bg-primary" text="Lihat History Data Pembayaran" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_RIGHT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton fx:id="pembayaranMainCetakButton" buttonType="RAISED" layoutX="488.0" layoutY="701.0" prefHeight="39.0" prefWidth="207.0" styleClass="bg-primary" text="Buat &amp; Cetak" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="History">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="30.0" layoutY="66.0" prefHeight="36.0" prefWidth="350.0" text=" History Data Pembayaran">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="ARCHIVE" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <VBox alignment="CENTER" layoutX="122.0" layoutY="149.0" prefHeight="591.0" prefWidth="568.0" style="-fx-border-color: BLACK; -fx-border-width: 4px;">
+                                             <padding>
+                                                <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+                                             </padding>
+                                             <children>
+                                                <FlowPane prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Tipe Pencarian">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXComboBox fx:id="pembayaranHistoryTipeSearch" prefHeight="25.0" prefWidth="142.0" styleClass="normal-color" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="34.0" layoutY="44.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Pilih">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXComboBox fx:id="pembayaranHistorySelectModel" prefHeight="25.0" prefWidth="251.0" styleClass="normal-color" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="34.0" layoutY="311.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="195.0" text="Kode PMB / RSP">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="pembayaranHistoryKode" prefWidth="251.0" styleClass="normal-color" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="30.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="34.0" layoutY="204.0" prefHeight="0.0" styleClass="bg-secondary" stylesheets="@style/style.css">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="185.0" text="Tanggal Transaksi" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXDatePicker fx:id="pembayaranHistoryTanggal" prefHeight="31.0" prefWidth="280.0" promptText="Any" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                                <TableView fx:id="pembayaranHistoryListTable" prefHeight="200.0" prefWidth="200.0" stylesheets="@style/style.css">
+                                                   <VBox.margin>
+                                                      <Insets top="50.0" />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="452.0" layoutY="108.0" prefHeight="41.0" prefWidth="226.0" style="-fx-background-color: BLACK;" stylesheets="@style/style.css" text=" Form Pencarian" textFill="WHITE">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CLIPBOARD" size="25" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                          <JFXButton fx:id="pembayaranBacktoMain" buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="118.0" styleClass="bg-secondary" text="Kembali" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children></AnchorPane> </content> </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Stok Obat">
+               <content>
+                  <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="stockTabPane" layoutY="-29.0" prefHeight="607.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Main">
+                                <content>
+                                  <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="stockMainObatTable" layoutX="65.0" layoutY="115.0" prefHeight="200.0" prefWidth="726.0" />
+                                          <Label layoutX="36.0" layoutY="26.0" prefHeight="36.0" prefWidth="339.0" text=" Data Stok Obat">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="MEDKIT" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="64.0" layoutY="76.0" prefHeight="17.0" prefWidth="727.0" text="Stok Terkini">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                             <styleClass>
+                                                <String fx:value="bg-secondary" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                          </Label>
+                                          <JFXButton fx:id="stockGotoManage" buttonType="RAISED" layoutX="65.0" layoutY="330.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="307.0" styleClass="bg-primary" text=" Manage Data Stok Hari Ini" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label layoutX="628.0" layoutY="332.0" text="List Data Stok">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                          </Label>
+                                                      <VBox fx:id="stockMainList" layoutX="72.0" layoutY="384.0" prefHeight="71.0" prefWidth="705.0" />
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                </content>
+                              </Tab>
+                              <Tab text="Manage">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton fx:id="stockGotoAdd" buttonType="RAISED" layoutX="51.0" layoutY="126.0" onAction="#changePaneWindow" prefHeight="37.0" prefWidth="166.0" text="Tambah Obat">
+                                             <styleClass>
+                                                <String fx:value="bg-primary" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="18" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label layoutX="22.0" layoutY="66.0" prefHeight="36.0" prefWidth="338.0" text=" Manage Data Stok Obat">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="EDIT" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <Pane layoutX="644.0" layoutY="-1.0" prefHeight="345.0" prefWidth="173.0" styleClass="bg-secondary" />
+                                          <Pane layoutX="629.0" layoutY="33.0" prefHeight="339.0" prefWidth="173.0" styleClass="bg-primary" />
+                                          <Pane layoutX="52.0" layoutY="186.0" prefHeight="228.0" prefWidth="735.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <Label layoutX="42.0" layoutY="120.0" text="Selected:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXButton fx:id="stockManageSelectedLabel" buttonType="RAISED" layoutX="14.0" layoutY="148.0" prefHeight="38.0" prefWidth="118.0" text="None">
+                                                   <styleClass>
+                                                      <String fx:value="bg-primary" />
+                                                      <String fx:value="text-white" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="188.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Kode Obat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockManageKode" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama Obat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockManageNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Harga per Unit" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <Label text="Rp." textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                               <padding>
+                                                                  <Insets right="5.0" />
+                                                               </padding>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockManageHarga" focusColor="WHITE" prefHeight="31.0" prefWidth="229.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="92.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Stok Masuk" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockManageStockMasuk" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="stockManageUpdateButton" buttonType="RAISED" layoutX="575.0" layoutY="202.0" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Update" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="stockManageDeleteButton" buttonType="RAISED" layoutX="415.0" layoutY="203.0" onAction="#deleteModelData" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Hapus" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <TableView fx:id="stockManageObatTable" layoutX="53.0" layoutY="453.0" prefHeight="200.0" prefWidth="736.0" />
+                                          <Label layoutX="367.0" layoutY="145.0" prefHeight="56.0" prefWidth="209.0" styleClass="bg-secondary" text="Manage Obat" textFill="WHITE">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CLIPBOARD" size="30" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <JFXButton fx:id="stockManageSave" buttonType="RAISED" layoutX="236.0" layoutY="127.0" prefHeight="37.0" prefWidth="108.0" text="Simpan">
+                                             <styleClass>
+                                                <String fx:value="bg-success" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="FILES_ALT" size="18" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label fx:id="stockManageTanggalLabel" alignment="CENTER" layoutX="260.0" layoutY="-4.0" prefHeight="41.0" prefWidth="301.0" styleClass="bg-secondary" text="Tanggal - TBD" textFill="WHITE" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="256.0" AnchorPane.topAnchor="-4.0">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <JFXButton fx:id="stockBacktoMain" buttonType="RAISED" layoutX="14.0" layoutY="10.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="118.0" styleClass="bg-secondary" text="Kembali" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Add">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane layoutX="61.0" layoutY="119.0" prefHeight="190.0" prefWidth="735.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="110.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Kode Obat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockAddKode" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama Obat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockAddNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Harga per Unit" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <Label text="Rp." textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                               <padding>
+                                                                  <Insets right="5.0" />
+                                                               </padding>
+                                                            </Label>
+                                                            <JFXTextField fx:id="stockAddHarga" focusColor="WHITE" prefHeight="31.0" prefWidth="229.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="stockAddTambahButton" buttonType="RAISED" layoutX="513.0" layoutY="166.0" prefHeight="39.0" prefWidth="202.0" styleClass="bg-primary" text="Tambahkan" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="61.0" layoutY="65.0" prefHeight="36.0" prefWidth="339.0" text=" Tambah Obat">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <JFXButton fx:id="stockBacktoManage" buttonType="RAISED" layoutX="12.0" layoutY="11.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="118.0" styleClass="bg-secondary" text="Kembali" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane> </content> </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Laporan">
+               <content>
+                  <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="laporanMainPasien" buttonType="RAISED" layoutX="326.0" layoutY="154.0" prefHeight="32.0" prefWidth="204.0" styleClass="bg-primary" text="Pasien" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="laporanMainPemeriksaan" buttonType="RAISED" layoutX="326.0" layoutY="219.0" prefHeight="32.0" prefWidth="204.0" styleClass="bg-primary" text="Pemeriksaan" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="STETHOSCOPE" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="laporanMainPembayaran" buttonType="RAISED" layoutX="326.0" layoutY="289.0" prefHeight="32.0" prefWidth="204.0" styleClass="bg-primary" text="Pembayaran" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="laporanMainStock" buttonType="RAISED" layoutX="326.0" layoutY="357.0" prefHeight="32.0" prefWidth="204.0" styleClass="bg-primary" text="Stok Obat" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="MEDKIT" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="laporanMainPegawai" buttonType="RAISED" layoutX="326.0" layoutY="423.0" prefHeight="32.0" prefWidth="204.0" styleClass="bg-primary" text="Admin" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="VCARD" size="20" />
+                           </graphic>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXDatePicker fx:id="laporanMainFromDate" layoutX="174.0" layoutY="83.0" promptText="Any" styleClass="normal-color" />
+                        <JFXDatePicker fx:id="laporanMainToDate" layoutX="585.0" layoutY="83.0" promptText="Any" styleClass="normal-color" />
+                        <Label layoutX="66.0" layoutY="86.0" text="Dari Tanggal">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="449.0" layoutY="86.0" text="Sampai Tanggal">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="406.0" layoutY="81.0" text="-">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="27.0" prefHeight="36.0" prefWidth="339.0" text=" Laporan Data">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EDIT" size="25" />
+                           </graphic>
+                        </Label>
+                     </children></AnchorPane> </content> </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Pegawai">
+               <content>
+                  <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="pegawaiTabPane" layoutY="-29.0" prefHeight="607.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Main">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton fx:id="pegawaiGotoCreate" buttonType="RAISED" layoutX="51.0" layoutY="84.0" onAction="#changePaneWindow" prefHeight="37.0" prefWidth="203.0" text="Tambah Admin">
+                                             <styleClass>
+                                                <String fx:value="bg-primary" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="18" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label layoutX="23.0" layoutY="24.0" prefHeight="36.0" prefWidth="279.0" text=" Data Admin">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="VCARD" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <Pane layoutX="644.0" layoutY="-1.0" prefHeight="418.0" prefWidth="173.0" styleClass="bg-secondary" />
+                                          <Pane layoutX="629.0" layoutY="27.0" prefHeight="423.0" prefWidth="173.0" styleClass="bg-primary" />
+                                          <Pane layoutX="52.0" layoutY="144.0" prefHeight="377.0" prefWidth="735.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <Label layoutX="42.0" layoutY="120.0" text="Selected:" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXButton fx:id="pegawaiMainSelectedModel" buttonType="RAISED" layoutX="14.0" layoutY="148.0" prefHeight="38.0" prefWidth="118.0" text="None">
+                                                   <styleClass>
+                                                      <String fx:value="bg-primary" />
+                                                      <String fx:value="text-white" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="188.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="NIK" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiMainNik" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiMainNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Jabatan" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiMainJabatan" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Username" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiMainUsername" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Password" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXPasswordField fx:id="pegawaiMainPassword" accessibleRole="PASSWORD_FIELD" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXPasswordField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="164.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Jenis Kelamin" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Laki - Laki" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pegawaiMainJK" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Perempuan" textFill="WHITE" toggleGroup="$pegawaiMainJK">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="215.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Role Aplikasi" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Staff" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pegawaiMainRole" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Dokter" textFill="WHITE" toggleGroup="$pegawaiMainRole">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane layoutX="10.0" layoutY="241.0" prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Alamat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextArea fx:id="pegawaiMainAlamat" focusColor="WHITE" prefHeight="50.0" prefWidth="368.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="pegawaiMainUpdateButton" buttonType="RAISED" layoutX="575.0" layoutY="357.0" onAction="#updateModelData" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Update" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="pegawaiMainDeleteButton" buttonType="RAISED" layoutX="414.0" layoutY="357.0" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Hapus" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="25" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <TableView fx:id="pegawaiMainListTable" layoutX="53.0" layoutY="547.0" prefHeight="200.0" prefWidth="735.0" />
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Create">
+                                 <content>
+                                    <ScrollPane> <content> <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane layoutX="61.0" layoutY="119.0" prefHeight="395.0" prefWidth="735.0" styleClass="bg-secondary">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="33.0" layoutY="99.0" size="80" />
+                                                <VBox layoutX="150.0" layoutY="20.0" prefHeight="188.0" prefWidth="571.0">
+                                                   <children>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="NIK" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiCreateNik" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Nama" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiCreateNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Jabatan" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiCreateJabatan" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefWidth="173.0" text="Username" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextField fx:id="pegawaiCreateUsername" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Password" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXPasswordField fx:id="pegawaiCreatePassword" accessibleRole="PASSWORD_FIELD" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXPasswordField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Jenis Kelamin" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Laki - Laki" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pegawaiCreateJK" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Perempuan" textFill="WHITE" toggleGroup="$pegawaiCreateJK">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Role Aplikasi" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXRadioButton text="Staff" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="pegawaiCreateRole" />
+                                                                           </toggleGroup>
+                                                            </JFXRadioButton>
+                                                            <JFXRadioButton layoutX="193.0" layoutY="15.0" text="Dokter" textFill="WHITE" toggleGroup="$pegawaiCreateRole">
+                                                               <FlowPane.margin>
+                                                                  <Insets left="20.0" />
+                                                               </FlowPane.margin>
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </JFXRadioButton>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                      <FlowPane prefHeight="0.0">
+                                                         <children>
+                                                            <Label prefHeight="26.0" prefWidth="173.0" text="Alamat" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="17.0" />
+                                                               </font>
+                                                               <FlowPane.margin>
+                                                                  <Insets right="10.0" />
+                                                               </FlowPane.margin>
+                                                            </Label>
+                                                            <JFXTextArea fx:id="pegawaiCreateAlamat" focusColor="WHITE" prefHeight="50.0" prefWidth="368.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" />
+                                                         </padding>
+                                                      </FlowPane>
+                                                   </children>
+                                                </VBox>
+                                                <JFXButton fx:id="pegawaiCreateTambahButton" buttonType="RAISED" layoutX="483.0" layoutY="373.0" onAction="#updateModelData" prefHeight="39.0" prefWidth="202.0" styleClass="bg-primary" text="Tambahkan" textFill="WHITE">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </Pane>
+                                          <Label layoutX="61.0" layoutY="65.0" prefHeight="36.0" prefWidth="339.0" text=" Tambah Admin">
+                                             <font>
+                                                <Font size="25.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="25" />
+                                             </graphic>
+                                          </Label>
+                                          <JFXButton fx:id="pegawaiBacktoMain" buttonType="RAISED" layoutX="12.0" layoutY="11.0" onAction="#changePaneWindow" prefHeight="39.0" prefWidth="118.0" styleClass="bg-secondary" text="Kembali" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="20" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane> </content> </ScrollPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children></AnchorPane> </content> </ScrollPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Pane layoutX="244.0" prefHeight="78.0" prefWidth="856.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Pane layoutY="70.0" prefHeight="12.0" prefWidth="856.0" styleClass="bg-secondary" />
+            <Label fx:id="appTanggal" layoutX="37.0" layoutY="11.0" text="Tanggal" textFill="#5d5252">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#5d5252" glyphName="CALENDAR_TIMES_ALT" />
+               </graphic>
+            </Label>
+            <Label fx:id="appJam" layoutX="37.0" layoutY="38.0" text="Jam" textFill="#5d5252">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#5d5252" glyphName="CLOCK_ALT" size="15" />
+               </graphic>
+            </Label>
+            <FontAwesomeIconView glyphName="ID_CARD" layoutX="604.0" layoutY="51.0" size="40" />
+            <Label fx:id="appLoginNama" layoutX="657.0" layoutY="16.0" text="Nama Pegawai" textFill="#5d5252">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="appLoginJabatan" layoutX="657.0" layoutY="38.0" text="Jabatan Pegawai" textFill="#5d5252" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="appLogoutButton" buttonType="RAISED" layoutX="-3.0" layoutY="612.0" onAction="#doLogout" prefHeight="44.0" prefWidth="247.0" styleClass="bg-primary" text=" Logout" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="20" text="" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

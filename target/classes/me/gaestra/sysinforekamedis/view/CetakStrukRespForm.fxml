@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="425.0" styleClass="mainFxmlClass" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.sysinforekamedis.core.CetakStrukRespFormController">
+   <children>
+      <TableView fx:id="cetakTableView" layoutX="9.0" layoutY="127.0" prefHeight="296.0" prefWidth="409.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="220.0" />
+      <Label layoutX="23.0" layoutY="543.0" text="Hasil Diagnosa" AnchorPane.leftAnchor="23.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="cetakDiagnosa" alignment="TOP_LEFT" layoutX="23.0" layoutY="565.0" prefHeight="68.0" prefWidth="197.0" text="Detail Diagnosa" textFill="#656060" wrapText="true" AnchorPane.leftAnchor="23.0" />
+      <Label fx:id="cetakJabatan" layoutX="297.0" layoutY="555.0" text="Staff Administrasi">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="cetakNamaStaff" alignment="CENTER" layoutX="264.0" layoutY="614.0" prefHeight="17.0" prefWidth="144.0" text="Nama Staff">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="cetakKode" layoutX="358.0" layoutY="24.0" text="Kode :" AnchorPane.rightAnchor="13.0" />
+      <Label fx:id="cetakPemeriksa" layoutX="376.0" layoutY="50.0" text="Pemeriksa :" AnchorPane.rightAnchor="13.0" />
+      <Label fx:id="cetakTanggal" layoutX="363.0" layoutY="69.0" text="Tanggal :" AnchorPane.rightAnchor="13.0" />
+      <JFXButton fx:id="cetakPrint" layoutX="254.0" layoutY="654.0" onAction="#printForm" prefHeight="25.0" prefWidth="78.0" styleClass="bg-primary" text="Cetak" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="PRINT" styleClass="text-white" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cetakCancel" layoutX="109.0" layoutY="654.0" onAction="#closeForm" prefHeight="25.0" prefWidth="78.0" styleClass="bg-secondary" text="Cancel" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" styleClass="text-white" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="154.0" layoutY="97.0" prefHeight="25.0" prefWidth="117.0" styleClass="bg-secondary" text="Struk Resep Obat" textFill="WHITE" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="154.0" />
+      <ImageView fitHeight="76.0" fitWidth="216.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@style/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="95.0" layoutY="15.0" prefHeight="31.0" prefWidth="157.0" text="Klinika Sistem Klinik">
+         <font>
+            <Font name="Century751 BT Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="39.0" prefHeight="44.0" prefWidth="150.0" text="Kebayoran Baru, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270" wrapText="true">
+         <font>
+            <Font name="Century751 BT Italic" size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="141.0" text="Nama Pasien" />
+      <Label layoutX="20.0" layoutY="163.0" text="Umur" />
+      <Label layoutX="20.0" layoutY="185.0" text="Tipe Pemeriksaan" />
+      <Label fx:id="cetakPemeriksaan" layoutX="154.0" layoutY="185.0" text="Tipe Pemeriksaan" />
+      <Label fx:id="cetakUmurPasien" layoutX="154.0" layoutY="163.0" text="Umur" />
+      <Label fx:id="cetakNamaPasien" layoutX="154.0" layoutY="141.0" text="Nama" />
+   </children>
+</AnchorPane>

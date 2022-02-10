@@ -1,0 +1,6 @@
+[LOG] [E] [2021/08/22 11:38:52]: Failed to execute statement
+[LOG] [E] [2021/08/22 11:51:18]: Failed to execute statement: Data truncation: Incorrect integer value: 'false' for column 'urgent' at row 1
+[LOG] [E] [2021/08/22 12:03:36]: Failed to execute statement: Data truncation: Incorrect integer value: 'true' for column 'urgent' at row 1
+[LOG] [E] [2021/08/22 12:03:46]: Failed to execute statement: Data truncation: Incorrect integer value: 'true' for column 'urgent' at row 1
+[LOG] [E] [2021/08/22 12:03:59]: Failed to execute statement: Data truncation: Incorrect integer value: 'false' for column 'urgent' at row 1
+[LOG] [E] [2021/08/22 12:08:24]: Failed to execute statement: Data truncation: Incorrect integer value: 'false' for column 'urgent' at row 1

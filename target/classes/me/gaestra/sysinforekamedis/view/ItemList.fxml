@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="695.0" spacing="180.0" style="-fx-border-color: BLACK; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <FontAwesomeIconView fill="#976c6c" glyphName="CLIPBOARD" size="25">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </FontAwesomeIconView>
+        <Label id="listItemTanggal" prefHeight="17.0" prefWidth="202.0" text="Tanggal -" textFill="#416297">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+      <JFXButton id="listItemAction" style="-fx-border-color: #2A73FF; -fx-border-radius: 20;" text=" Lihat" textFill="#3178b1">
+         <graphic>
+            <FontAwesomeIconView fill="#3178b1" glyphName="FILE" />
+         </graphic>
+      </JFXButton>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>

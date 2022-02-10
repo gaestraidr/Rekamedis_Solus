@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="812.0" styleClass="bg-secondary" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.sysinforekamedis.core.LoginFormController">
+   <children>
+      <AnchorPane fx:id="loginForm" layoutX="403.0" prefHeight="591.0" prefWidth="407.0">
+         <children>
+            <JFXTextField fx:id="loginUsername" focusColor="WHITE" layoutX="78.0" layoutY="235.0" onAction="#doLogin" prefHeight="25.0" prefWidth="300.0" promptText="Username" style="-fx-prompt-text-fill: #b2aeae;" styleClass="text-white" unFocusColor="#b2aeae">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="28.0" layoutY="272.0" size="30" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CERTIFICATE" layoutX="31.0" layoutY="325.0" size="30" />
+            <JFXPasswordField fx:id="loginPassword" focusColor="WHITE" layoutX="78.0" layoutY="290.0" onAction="#doLogin" prefHeight="25.0" prefWidth="300.0" promptText="Password" style="-fx-prompt-text-fill: #b2aeae;" styleClass="text-white" unFocusColor="#b2aeae">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="145.0" layoutY="488.0" onAction="#doLogin" prefHeight="54.0" prefWidth="112.0" styleClass="bg-danger" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="loginError" alignment="CENTER" layoutX="46.0" layoutY="355.0" prefHeight="27.0" prefWidth="318.0" textFill="#f89393" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="37.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="96.0" layoutX="50.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@style/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="156.0" layoutY="90.0" prefHeight="31.0" prefWidth="165.0" text="Klinik" textFill="WHITE">
+               <font>
+                  <Font name="Century751 BT Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="121.0" prefHeight="31.0" prefWidth="165.0" text="Triaz Persada" textFill="WHITE">
+               <font>
+                  <Font name="Century751 BT Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="183.0" text="Silahkan melakukan login!" textFill="#dad0d0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="360.0" onAction="#doExit" text="X" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXSpinner fx:id="loginSpinner" layoutX="578.0" layoutY="250.0" visible="false" />
+      <ImageView fitHeight="591.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@style/bg-login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

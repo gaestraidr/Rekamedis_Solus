@@ -1,0 +1,184 @@
+[LOG] [E] [2021/08/23 08:43:11]: Failed to get name of fields
+[LOG] [E] [2021/08/23 08:44:25]: Failed to get name of fields
+[LOG] [E] [2021/08/23 08:50:48]: Failed to get name of fields
+[LOG] [E] [2021/08/23 08:51:09]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:06:37]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:10:57]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:11:08]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:11:24]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:13:45]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:17:09]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:19:11]: Failed to execute statement: Data truncation: Incorrect integer value: 'true' for column 'urgent' at row 1
+[LOG] [E] [2021/08/23 09:28:33]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:29:45]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:30:19]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:32:07]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:32:40]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:32:40]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:36:34]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:36:34]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:38:26]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:39:20]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:39:20]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:45:20]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:46:35]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:46:35]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:46:41]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:47:37]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:47:47]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:47:57]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:47:57]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:49:39]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:49:58]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:55:57]: Failed to get name of fields
+[LOG] [E] [2021/08/23 09:56:35]: Failed to get name of fields
+[LOG] [E] [2021/08/23 10:04:56]: Failed to execute statement: Cannot add or update a child row: a foreign key constraint fails (`sysinforekamedis`.`pembayaran`, CONSTRAINT `pembayaran_foreign_pegawai_id` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`))
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:56]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:57]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:58]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:31:59]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:00]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:21]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:21]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:21]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:21]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:21]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:22]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:22]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:22]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 10:32:22]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 13:37:18]: Failed to execute statement: Field 'diagnosa' doesn't have a default value
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
+[LOG] [E] [2021/08/23 17:17:05]: Failed to open connection: Data source rejected establishment of connection,  message from server: "Too many connections"
